@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  background-color: #e4e5e6;
+  padding: 0;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.header-container {
+  position:relative;
+  text-align: center;
+  color:  rgb(159, 176, 239);
+}
+
+.header-image{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.header-name{
+  position: absolute;
+  top: 40%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  font-size: 50pt;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #131d2b;
+  padding: 10px;
+  height:40px;
+}
+
+.nav-links {
+  font-size:20pt;
+}
+
+a {
+  color:  rgb(159, 176, 239);
+  text-decoration: none;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 20pt;
+    margin: 20px;
+    text-decoration: none;
+    color: rgb(159, 176, 239);
+}
+
+.headshot{
+  width:80%;
+  height:80%;
+  margin-left: 5%;
+  padding: 10px;
+  border-radius: 20px;
+  position: center;
+}
+
+.bio {
+  margin-bottom: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 0px;
+  display: flex;
+  padding: 40px;
+  align-items: flex-start;
+}
+
+.bio1{
+  order:1;
+}
+
+.bio2{
+  order: 2;
+  background-color: #F5F3F0;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 19px 12px#6e85b6af;
+  border: 1px solid #131d2b;
+}
+
+.about {
+  display:flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.bio_caption {
+  font-size: 15pt;
+  padding:0px;
+}
+
+p {
+  font-size: 15pt;
+}
+
+a:hover {
+  color: #eb86da;
+  text-decoration: none;
+}
+
+#typewriter-text {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.5rem; /* Adjust to match your aesthetic */
+  color: #131d2b;    /* Match your navbar/dark blue theme */
+  border-right: 3px solid #5d5dff; 
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle; /* Aligns it with the "About Me" text */
+  margin-left: 10px;
+}
+
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: #5d5dff; }
+}

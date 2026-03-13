@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  background-color: #e4e5e6;
+  padding: 0;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #131d2b;
+  padding: 10px;
+  height:40px;
+}
+
+.nav-links {
+  font-size:20pt;
+}
+
+a {
+  color:  rgb(159, 176, 239);
+  text-decoration: none;
+  transition: 0.3s; 
+}
+
+a:hover {
+  color: #eb86da;
+  text-decoration: none;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 20pt;
+    margin: 20px;
+    text-decoration: none;
+    color: rgb(159, 176, 239);
+}
+
+p {
+  font-size:30pt;
+  text-align: center;
+}
+
+svg {
+  width: 24px; 
+  height: 24px;
+  fill: rgb(159, 176, 239);
+}
+
+svg:hover{
+  fill:#eb86da;
+  transition: fill 0.2s;
+}
+
+.p, .contact-list {
+  display: flex;
+  flex-direction: row;    /* This aligns them in a line */
+  justify-content: center; /* This centers the whole row on the page */
+  gap: 30px;              /* This adds space between each link */
+  list-style: none;       /* Removes the bullet points */
+  padding: 0;
+  margin-top: 30px;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center;    /* Keeps icons and text perfectly leveled */
+  gap: 8px; 
+  font-size: 15pt;              /* Space between the link text and its icon */
+}
+
+.lowerp {
+  text-align:justify;
+}

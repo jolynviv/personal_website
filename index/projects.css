@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  background-color: #e4e5e6;
+  padding: 0;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #131d2b;
+  padding: 10px;
+  height:40px;
+}
+
+.nav-links {
+  font-size:20pt;
+}
+
+a {
+  color:  rgb(159, 176, 239);
+  text-decoration: none;
+  transition: 0.3s; 
+}
+
+a:hover {
+  color: #eb86da;
+  text-decoration: none;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 20pt;
+    margin: 20px;
+    text-decoration: none;
+    color: rgb(159, 176, 239);
+}
+
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #131d2b;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.container {
+    padding: 40px;
+    position: relative;
+    width: 50%;
+}
+.left {
+    left: 0;
+}
+.right {
+    left: 50%;
+}
+
+.image-row {
+    display: flex;         /* Transitions items into a row */
+    flex-direction: row;   /* Explicitly sets them side-by-side */
+    gap: 10px;             /* Space between the pictures */
+    margin-top: 15px;      /* Space below the paragraph */
+    justify-content: flex-start; /* Aligns them to the left of the card */
+    flex-wrap: wrap;       /* Keeps them from breaking out of the box on mobile */
+}
+
+.image-row img {
+    width: 30%;            /* Each takes up roughly 1/3rd of the card */
+    height: auto;          /* Keeps the proportions correct */
+    aspect-ratio: 1 / 2;   /* Optional: makes them all uniform squares */
+    object-fit: cover;     /* Crops them nicely if they are different shapes */
+    border-radius: 8px;
+    box-shadow: 3px 4px#6e85b6af;
+}
+
+.image-right img {
+    width:100%;
+    object-fit: cover;   
+    border-radius: 8px;
+    box-shadow: 3px 4px#6e85b6af
+}
