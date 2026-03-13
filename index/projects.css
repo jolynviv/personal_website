@@ -71,19 +71,19 @@ a:hover {
 }
 
 .image-row {
-    display: flex;         /* Transitions items into a row */
-    flex-direction: row;   /* Explicitly sets them side-by-side */
-    gap: 10px;             /* Space between the pictures */
-    margin-top: 15px;      /* Space below the paragraph */
-    justify-content: flex-start; /* Aligns them to the left of the card */
-    flex-wrap: wrap;       /* Keeps them from breaking out of the box on mobile */
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 15px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 .image-row img {
-    width: 30%;            /* Each takes up roughly 1/3rd of the card */
-    height: auto;          /* Keeps the proportions correct */
-    aspect-ratio: 1 / 2;   /* Optional: makes them all uniform squares */
-    object-fit: cover;     /* Crops them nicely if they are different shapes */
+    width: 30%;
+    height: auto;
+    aspect-ratio: 1 / 2;
+    object-fit: cover;
     border-radius: 8px;
     box-shadow: 3px 4px#6e85b6af;
 }
